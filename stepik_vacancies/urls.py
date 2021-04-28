@@ -1,12 +1,12 @@
 import debug_toolbar
 
+from django.conf import settings
+
 from django.contrib import admin
 
 from django.urls import include, path
 
 from vacancies.views import custom_handler404, custom_handler500
-
-from stepik_vacancies import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
